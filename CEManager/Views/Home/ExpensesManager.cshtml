@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null;
+}
+    <head>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            table, th {
+                color: #FFFFFF;
+                font-weigh: bold;
+                text-align: center;
+            }
+
+            table, tr {
+                color: #000000;
+                font-weigh: bold;
+            }
+
+            body {
+                background: #53548A fixed top;
+            }
+        </style>
+    </head>
+    <div id="app" class="carousel slide" data-ride="carousel" style="width:100%" data-interval="6000">
+        <div>&nbsp;</div>
+        <div style="color:#FFFFFF;font-size:large">&nbsp;&nbsp;&nbsp;&nbsp;收支管理</div>
+        <div class="container" style="width:100%">
+            <div class="d-flex flex-row-reverse" style="width:100%">
+                &nbsp;
+            </div>
+            <div></div>
+        </div>
+        <div>&nbsp;</div>
+        <table v-show="contactsList.length" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>院校</th>
+                    <th>业务</th>
+                    <th>日期</th>
+                    <th></th>
+                    <th>学院人数</th>
+                    <th>单价</th>
+                    <th>收入</th>
+                    <th>成本</th>
+                    <th>利润</th>
+                    <th>分院分配</th>
+                    <th>总院收入</th>
+                </tr>
+            </thead>
+            <tr v-for="(contact,index) in contactsList">
+                <td>{{contact.Id}}</td>
+                <td>{{contact.Name}}</td>
+                <td>{{contact.Address}}</td>
+                <td>{{contact.Date}}</td>
+                <td>&nbsp;</td>
+                <td>{{contact.ClassNum}}</td>
+                <td>{{contact.UnitPirce}}</td>
+                <td>{{contact.Income}}</td>
+                <td>{{contact.Amount}}</td>
+                <td>{{contact.Profit}}</td>
+                <td>{{contact.AmountReMark}}</td>
+                <td>{{contact.OtherReMark}}</td>
+
+            </tr>
+        </table>
+        <div class="container" style="width:40%;background-color:#FFFF00">
+            <div class="d-flex flex-row" style="width:40%">
+                总院备注：
+            </div>
+        </div>
+        <div class="container" style="width:100%">
+            <div class="d-flex flex-row-reverse" style="width:100%">
+                <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">导出表格</button></div>
+            </div>
+            <div></div>
+        </div>
+        <script src="~/js/vue.js"></script>
+        <script src="~/js/axios.js"></script>
+        <script>
+
+            var app2 = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    contactsList: [
+                        { Id: "1", Name: "总院", Address: "XX课", Date: "2019-9-10", Owner: "杨继红", ClassNum: "12", UnitPirce: "1280", Income: "132", Amount: "60000", AmountReMark: "1：11", OtherReMark: "特记事项", Profit: "100" },
+                        { Id: "2", Name: "院1", Address: "XX课", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" },
+                        { Id: "3", Name: "院2", Address: "XX课", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" }]
+                }
+            });
+        </script>

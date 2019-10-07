@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+    <head>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            table, th {
+                color: #FFFFFF;
+                font-weigh: bold;
+                text-align: center;
+            }
+
+            table, tr {
+                color: #000000;
+                font-weigh: bold;
+            }
+
+            body {
+                background: #53548A fixed top;
+            }
+        </style>
+    </head>
+    <div id="app" class="carousel slide" data-ride="carousel" style="width:100%" data-interval="6000">
+        <div>&nbsp;</div>
+        <div style="color:#FFFFFF;font-size:large">&nbsp;&nbsp;&nbsp;&nbsp;院校管理</div>
+        <div class="container" style="width:100%">
+            <div class="d-flex flex-row-reverse" style="width:100%">
+                <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">添加院校</button></div>
+            </div>
+            <div></div>
+        </div>
+        <div>&nbsp;</div>
+        <table v-show="collegeList.length" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>院校名</th>
+                    <th>上级院校</th>
+                    <th>院长</th>
+                    <th>院校保证金</th>
+                    <th>院校利润分配比例</th>
+                    <th>上级院校分成比例</th>
+                    <th>院校合同期</th>
+                    <th>备注</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr v-for="(contact,index) in collegeList">
+                <td>{{contact.Id}}</td>
+                <td>{{contact.Name}}</td>
+                <td>{{contact.Higher}}</td>
+                <td>{{contact.President}}</td>
+                <td>{{contact.Money}}</td>
+                <td>{{contact.CollegeDivide}}</td>
+                <td>{{contact.HigherDivide}}</td>
+                <td>{{contact.Contract}}</td>
+                <td>{{contact.Remark}}</td>
+                <td><button type="button" class="btn btn-default" style="background-color:#00B0F0">删除</button></td>
+            </tr>
+        </table>        
+        <div class="container" style="width:100%">
+            <div class="d-flex flex-row-reverse" style="width:100%">
+                <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">导出表格</button></div>
+            </div>
+            <div></div>
+        </div>
+        <script src="~/js/vue.js"></script>
+        <script src="~/js/axios.js"></script>
+        <script>
+
+            var app2 = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    collegeList: [
+                        { Id: "1", Name: "大连附小", Higher: "大连理工", President: "zhang", Money: "10", CollegeDivide: "12%", HigherDivide: "12%", Contract: "132", Remark: "" },
+                        { Id: "2", Name: "青岛附小", Higher: "青岛理工", President: "", Money: "", CollegeDivide: "1%", HigherDivide: "12%", Contract: "132", Remark: ""},
+                        { Id: "3", Name: "上海附小", Higher: "上海理工", President: "", Money: "", CollegeDivide: "1%", HigherDivide: "12%", Contract: "132", Remark: "" }]
+                }
+            });
+        </script>

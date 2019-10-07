@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+    <head>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            table, th {
+                color: #FFFFFF;
+                font-weigh: bold;
+                text-align: center;
+            }
+
+            table, tr {
+                color: #000000;
+                font-weigh: bold;
+            }
+
+            body {
+                background: #53548A fixed top;
+            }
+        </style>
+    </head>
+    <div id="app" class="carousel slide" data-ride="carousel" style="width:100%" data-interval="6000">
+        <div>&nbsp;</div>
+        <div style="color:#FFFFFF;font-size:large">&nbsp;&nbsp;&nbsp;&nbsp;学院名称-城市</div>
+        <div class="container" style="width:100%">
+            <div class="d-flex flex-row-reverse" style="width:100%">
+                <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">编辑/保存</button></div>
+                <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">业务一览</button></div>
+            </div>
+            <div></div>
+        </div>
+        
+        <div class="container" style="width:100%;color:#FFFFFF;font-size:large">
+            <div class="d-flex flex-row" style="width:40%">
+                院长：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                院长联系方式：&nbsp;&nbsp;<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                项目联系方式：&nbsp;&nbsp;<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                联系人联系方式：<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                开设日期：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                合同日期：~
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                上级院校：
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                下级院校一览表：
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                分院保证金：<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                分院分润比例：<input />
+            </div>
+            <div class="d-flex flex-row" style="width:40%">
+                总院备注：&nbsp;&nbsp;&nbsp;&nbsp;<input />
+            </div>
+        </div>
+       
+        <script src="~/js/vue.js"></script>
+        <script src="~/js/axios.js"></script>
+        <script>
+
+            var app2 = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!'
+                }
+            });
+        </script>
