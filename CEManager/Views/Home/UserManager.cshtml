@@ -3,6 +3,8 @@
 }
 <head>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="~/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/css/sb-admin.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <style type="text/css">
@@ -18,56 +20,106 @@
         }
 
         body {
-            background: #53548A fixed top;
+            background: #343a40 !important;
         }
     </style>
 </head>
-<div id="app" class="carousel slide" data-ride="carousel" style="width:100%" data-interval="6000">
-    <div>&nbsp;</div>
-    <div style="color:#FFFFFF;font-size:large">&nbsp;&nbsp;&nbsp;&nbsp;用户管理</div>
-    <div class="container" style="width:100%">
-        <div class="d-flex flex-row-reverse" style="width:100%">
-            <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">添加用户</button></div>
-        </div>
-        <div></div>
-    </div>
-    <div>&nbsp;</div>
-    <table v-show="contactsList.length" class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>用户名</th>
-                <th>权限</th>
-                <th>密码</th>
-                <th>所属院校</th>
-                <th>备注</th>                
-                <th>利润</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tr v-for="(contact,index) in contactsList">
-            <td>{{contact.Id}}</td>
-            <td>{{contact.Name}}</td>
-            <td>管理者</td>
-            <td>******</td>           
-            <td>{{contact.AmountReMark}}</td>
-            <td>{{contact.OtherReMark}}</td>
-            <td>{{contact.Profit}}</td>
-            <td><button type="button" class="btn btn-default" style="background-color:#00B0F0">删除</button></td>
-        </tr>
-    </table>    
-    <script src="~/js/vue.js"></script>
-    <script src="~/js/axios.js"></script>
-    <script>
+<body class="fixed-nav sticky-footer" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar  navbar-dark navbar-left" id="mainNav" style="padding:0px;height:20px">
+        <div class="navbar-collapse in" id="navbarResponsive">
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="学院业务">
+                    <a class="nav-link" href="/Home/Index">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                        <span class="nav-link-text">学院业务</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="个人收支">
+                    <a class="nav-link" href="/Home/Contact">
+                        <i class="fa fa-fw fa-area-chart"></i>
+                        <span class="nav-link-text">个人收支</span>
+                    </a>
+                </li>
 
-            var app2 = new Vue({
-                el: '#app',
-                data: {
-                    message: 'Hello Vue!',
-                    contactsList: [
-                        { Id: "1", Name: "张三哥", Address: "大连", Date: "2019-9-10", Owner: "杨继红", ClassNum: "12", UnitPirce: "1280", Income: "132", Amount: "60000", AmountReMark: "大连理工", OtherReMark: "特记事项", Profit: "100" },
-                        { Id: "2", Name: "李二叔", Address: "青岛", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" },
-                        { Id: "3", Name: "三大爷", Address: "上海", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" }]
-                }
-            });
-    </script>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="用户管理">
+                    <a class="nav-link" href="/Home/UserManager">
+                        <i class="fa fa-fw fa-android"></i>
+                        <span class="nav-link-text">用户管理</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="院校管理">
+                    <a class="nav-link" href="/Home/CollegeManager">
+                        <i class="fa fa-fw fa-database"></i>
+                        <span class="nav-link-text">院校管理</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="收支管理">
+                    <a class="nav-link" href="/Home/ExpensesManager">
+                        <i class="fa fa-fw fa-trademark"></i>
+                        <span class="nav-link-text">收支管理</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper" style="background: #53548A fixed top;">
+        <div id="app" class="carousel slide" data-ride="carousel" style="width:100%" data-interval="6000">
+            <div>&nbsp;</div>
+            <div style="color:#FFFFFF;font-size:large">&nbsp;&nbsp;&nbsp;&nbsp;用户管理</div>
+            <div class="container" style="width:100%">
+                <div class="d-flex flex-row-reverse" style="width:100%">
+                    <div class="p-2"><button type="button" class="btn btn-default" style="background-color:#FFFF00">添加用户</button></div>
+                </div>
+                <div></div>
+            </div>
+            <div>&nbsp;</div>
+            <table v-show="contactsList.length" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>用户名</th>
+                        <th>权限</th>
+                        <th>密码</th>
+                        <th>所属院校</th>
+                        <th>备注</th>
+                        <th>利润</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tr v-for="(contact,index) in contactsList">
+                    <td>{{contact.Id}}</td>
+                    <td>{{contact.Name}}</td>
+                    <td>管理者</td>
+                    <td>******</td>
+                    <td>{{contact.AmountReMark}}</td>
+                    <td>{{contact.OtherReMark}}</td>
+                    <td>{{contact.Profit}}</td>
+                    <td><button type="button" class="btn btn-default" style="background-color:#00B0F0">删除</button></td>
+                </tr>
+            </table>
+            <script src="~/js/vue.js"></script>
+            <script src="~/js/axios.js"></script>
+            <script>
+
+                var app2 = new Vue({
+                    el: '#app',
+                    data: {
+                        message: 'Hello Vue!',
+                        contactsList: [
+                            { Id: "1", Name: "张三哥", Address: "大连", Date: "2019-9-10", Owner: "杨继红", ClassNum: "12", UnitPirce: "1280", Income: "132", Amount: "60000", AmountReMark: "大连理工", OtherReMark: "特记事项", Profit: "100" },
+                            { Id: "2", Name: "李二叔", Address: "青岛", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" },
+                            { Id: "3", Name: "三大爷", Address: "上海", Date: "", Owner: "", ClassNum: "1", UnitPirce: "100", Income: "132", Amount: "", AmountReMark: "", OtherReMark: "", Profit: "" }]
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</body>

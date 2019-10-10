@@ -30,7 +30,7 @@ body.sticky-footer .content-wrapper {
   bottom: 3px;
   display: none;
   width: 50px;
-  height: 50px;
+  height: 10px;
   text-align: center;
   color: white;
   background: rgba(52, 58, 64, 0.5);
@@ -106,7 +106,7 @@ body.sticky-footer .content-wrapper {
 }
 
 #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 #mainNav .navbar-collapse .sidenav-toggler {
@@ -128,7 +128,7 @@ body.sticky-footer .content-wrapper {
 
 #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .indicator {
   position: absolute;
-  top: 5px;
+  top: 0px;
   left: 21px;
   font-size: 10px;
 }
@@ -165,7 +165,7 @@ body.sticky-footer .content-wrapper {
     padding: 0;
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-    padding: 5px;
+    padding: 10px;
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
@@ -214,7 +214,7 @@ body.sticky-footer .content-wrapper {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: calc(100vh - 56px);
+    margin-top: calc(100vh - 10px);
   }
   #mainNav.fixed-top .sidenav-toggler > .nav-item {
     width: 120px;
@@ -286,7 +286,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
 
 @media (min-width: 992px) {
   .content-wrapper {
-    margin-left: 140px;
+    margin-left: 120px;
   }
 }
 
