@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+    <style>
+        .chine{
+            font-family: 'Arial Negreta', 'Arial';
+            font-weight: 700;
+            font-style: normal;
+            color: #330099;
+            margin-top:100px;
+            margin-bottom:100px;
+            font-size: 64px;
+        }
+        .jiayi{
+            font-family: 'Arial Negreta', 'Arial';
+            font-weight: 700;
+            font-style: normal;
+            font-size: 36px;
+            color: #CCCC33;
+            margin-bottom:100px;
+        }
+        .userTitle{
+            width: 50%;
+            text-align:left;
+            color: #333333;
+            font-size:36px;
+            font-weight:bold;
+            margin-left:150px;
+        }
+        .userInput{
+            margin-left:10px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+            width:500px;
+            height:50px;
+        }
+        .btn{
+            margin-top:100px;            
+            background-color: #66CCFF;
+            width:30%;
+        }
+        .link{
+            font-family: 'Chiller Normal', 'Chiller';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            text-decoration: underline;
+            color: #66CCFF;
+            line-height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weui-panel weui-panel_access" style="height:100%;">
+        <div class="weui-panel__bd" style="height:100%;width: 100%;text-align:center">
+            <img class="weui-media-box__thumb" src="/images/usercenter/u7.png" style="width: 50%;height: 30%;margin-top:100px;">
+            <h4 class="weui-media-box__title chine">Chine Doctor</h4>
+            <h4 class="weui-media-box__title jiayi">交易行为随身医生</h4>
+            <div class="userTitle">用户名</div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="font-size: 36px;">
+                        <input class="weui-input userInput" type="text" placeholder="请输入用户名"><a>找回用户名</a>
+                    </div>
+                </div>
+            </div>
+            <div class="userTitle">密码</div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="font-size: 36px;">
+                        <input class="weui-input userInput" type="text" placeholder="请输入密码"><a>找回密码&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="weui-btn weui-btn_primary btn">登录</a>
+            <a class="weui-media-box__desc link">>>立即注册</a>
+            <a class="weui-media-box__desc link">>>网站首页</a>
+            <a class="weui-media-box__desc link">>>联系我们</a>
+            <div style="margin-top:50px">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+</body>
+</html>
