@@ -14,9 +14,7 @@ D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Ev
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\EvaluationWeb.TagHelpers.input.cache
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\EvaluationWeb.TagHelpers.output.cache
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\EvaluationWeb.RazorCoreGenerate.cache
-D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -30,3 +28,7 @@ D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Ev
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\EvaluationWeb.pdb
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\EvaluationWeb.csproj.CopyComplete
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\UserCenter.g.cshtml.cs
+D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalCenter.g.cshtml.cs
+D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalPlan.g.cshtml.cs
+D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalStart.g.cshtml.cs

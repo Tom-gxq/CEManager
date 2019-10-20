@@ -28,7 +28,15 @@ namespace EvaluationWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult EvalCenter()
+        {
+            return View();
+        }
+        public IActionResult EvalPlan()
+        {
+            return View();
+        }
+        public IActionResult EvalStart()
         {
             return View();
         }

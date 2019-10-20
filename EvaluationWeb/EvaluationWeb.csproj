@@ -11,6 +11,13 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\usercenter\" />
+    <Folder Include="wwwroot\images\evalcenter\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\EvalStart.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>
