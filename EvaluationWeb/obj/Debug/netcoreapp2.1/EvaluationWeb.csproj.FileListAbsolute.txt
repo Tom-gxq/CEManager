@@ -32,3 +32,4 @@ D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Ra
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalCenter.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalPlan.g.cshtml.cs
 D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalStart.g.cshtml.cs
+D:\项目构建\CEManager\Src\CEManager\EvaluationWeb\obj\Debug\netcoreapp2.1\Razor\Views\Home\EvalPlanSetting.g.cshtml.cs

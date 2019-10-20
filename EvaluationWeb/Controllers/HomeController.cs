@@ -40,6 +40,10 @@ namespace EvaluationWeb.Controllers
         {
             return View();
         }
+        public IActionResult EvalPlanSetting()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -60,7 +60,7 @@ using EvaluationWeb.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(52, 3221, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "444281790e474045a056d4e6529d67bf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "298b4ce8947044789e78111d6788080c", async() => {
                 BeginContext(58, 3208, true);
                 WriteLiteral(@"
     <link rel=""stylesheet"" href=""https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css"">
@@ -183,7 +183,7 @@ using EvaluationWeb.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(3275, 3966, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccb64aa0bc6a416cb96cea3b139ee12c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d4f76d01c8746878fc20b6ee5a54bdd", async() => {
                 BeginContext(3281, 3953, true);
                 WriteLiteral(@"
     <div class=""weui-panel"">
